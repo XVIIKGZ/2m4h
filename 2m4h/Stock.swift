@@ -21,7 +21,7 @@ class Stock: Realty{
         super.init(area: area, price: price, adress: adress)
     }
     
-    func showProduct(){
-        print("На складе в компании - \(company), есть такие товары как: \(product)")
+    override func showInfo() {
+        print("Площадь - \(area). Цена - \(price). Адрес - \(adress). На складе в компании - \(company), есть такие товары как: \(product)")
     }
 }
